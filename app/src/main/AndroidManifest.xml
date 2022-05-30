@@ -13,7 +13,7 @@
             android:name=".JA_Activity2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".JA_Activity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
