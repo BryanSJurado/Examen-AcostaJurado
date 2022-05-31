@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -47,7 +48,7 @@ public class JBBA_Activity1 extends AppCompatActivity {
     }
 
     public void onClickSiguiente(View view) {
-        Intent intent = new Intent(this, JBBA_Activity1.class);
+        Intent intent = new Intent(this, JBBA_Activity2.class);
         startActivityForResult(intent, codigo);
     }
 
@@ -75,18 +76,9 @@ public class JBBA_Activity1 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        //Obtener los datos regresados desde la ventana hija.
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, (List<String>) data);
+        JBBA_lvOriginal.setAdapter(adapter);
 
-        String informacion;
-        informacion = data.getDataString();
-        String[] datos = informacion.split(",");
-/*
-        nombre=datos[0];
-        apellido=datos[1];
-        base=datos[2];
-        exponente=datos[3];
-        numero=datos[4];
-*/
         JBBA_btnMostrar.setEnabled(true);
         JBBA_btnOrdenar.setEnabled(true);
 
