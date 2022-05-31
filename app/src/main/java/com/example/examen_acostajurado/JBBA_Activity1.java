@@ -9,10 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.util.ArrayList;
 import java.util.Locale;
+import java.util.List;
 
 public class JBBA_Activity1 extends AppCompatActivity {
 
+    public List<String>JBBA_listaNumeros =  new ArrayList<String>();
+    public List<String>JBBA_listaNumeros2 =  new ArrayList<String>();
     private int codigo = 1;
 
     private Button JBBA_btnOrdenar;
@@ -59,6 +63,14 @@ public class JBBA_Activity1 extends AppCompatActivity {
          */
     }
 
+    public void Ordenar(){
+        int i =0;
+        do{
+            
+            i++;
+        }while(i <= JBBA_listaNumeros.size()-1);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -78,6 +90,6 @@ public class JBBA_Activity1 extends AppCompatActivity {
         JBBA_btnMostrar.setEnabled(true);
         JBBA_btnOrdenar.setEnabled(true);
 
-        
+
     }
 }
