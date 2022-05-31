@@ -76,7 +76,10 @@ public class JBBA_Activity1 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, (List<String>) data);
+        String informacion;
+        JBBA_listaNumeros2  = (List<String>)data;
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,  JBBA_listaNumeros2);
         JBBA_lvOriginal.setAdapter(adapter);
 
         JBBA_btnMostrar.setEnabled(true);
