@@ -77,5 +77,7 @@ public class JBBA_Activity1 extends AppCompatActivity {
 */
         JBBA_btnMostrar.setEnabled(true);
         JBBA_btnOrdenar.setEnabled(true);
+
+        
     }
 }
