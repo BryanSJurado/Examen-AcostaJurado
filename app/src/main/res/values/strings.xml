@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Examen-Acosta,Jurado</string>
+    <string name="JBBA_listaOrdenada">Lista Ordenada</string>
+    <string name="JBBA_listaIndices">Lista Indices</string>
+    <string name="JBBA_listaOriginal">Lista Original</string>
+    <string name="JBBA_btnOrdenar">Ordenar</string>
+    <string name="JBBA_btnMostrar">Mostrar</string>
+    <string name="JBBA_btnSiguiente">Siguienteó</string>
 </resources>
