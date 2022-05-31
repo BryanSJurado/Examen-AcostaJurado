@@ -66,7 +66,7 @@ public class JBBA_Activity1 extends AppCompatActivity {
     public void Ordenar(){
         int i =0;
         do{
-            
+
             i++;
         }while(i <= JBBA_listaNumeros.size()-1);
     }
