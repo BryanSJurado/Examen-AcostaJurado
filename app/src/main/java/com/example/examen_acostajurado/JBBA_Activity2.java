@@ -36,5 +36,6 @@ public class JBBA_Activity2 extends AppCompatActivity {
     list.add(JBBA_editTextnumero.getText().toString());
     return list;
 
+
     }
 }
