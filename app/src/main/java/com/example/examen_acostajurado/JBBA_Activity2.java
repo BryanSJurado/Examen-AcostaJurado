@@ -2,6 +2,7 @@ package com.example.examen_acostajurado;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -26,14 +27,11 @@ public class JBBA_Activity2 extends AppCompatActivity {
         JBBA_editTextnumero = findViewById(R.id.JBBA_editTextIngreseunNumero);
         JBBA_listViewnumeros =  findViewById(R.id.JBBA_ListViewNumeros);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, JBBA_ingresarDatos());
-        JBBA_listViewnumeros.setAdapter(adapter);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, JBBA_ingresarDatos());
+        //JBBA_listViewnumeros.setAdapter(adapter);
+
 
     }
 
-    public List<String> JBBA_ingresarDatos(){
-    List<String> list = new ArrayList<String>();
-    list.add(JBBA_editTextnumero.getText().toString());
-    return list;
-    }
+
 }
